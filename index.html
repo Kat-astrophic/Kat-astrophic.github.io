@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manas fotogrāfijas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            color: #222;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 2rem 1rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manas Fotogrāfijas</h1>
+        <p>Skaistuma mirkļi no pasaules ap manīm</p>
+    </header>
+    <section class="gallery">
+        <img src="https://placehold.co/600x400?text=Foto+1" alt="Foto 1">
+        <img src="https://placehold.co/600x400?text=Foto+2" alt="Foto 2">
+        <img src="https://placehold.co/600x400?text=Foto+3" alt="Foto 3">
+    </section>
+    <footer>
+        © 2025 Tavs Vārds · Lapa izveidota ar mīlestību
+    </footer>
+</body>
+</html>
